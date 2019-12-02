@@ -1,7 +1,6 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
-@import "base/base";
 @import "base/animation";
 
 @import "components/cookiesPopup";
@@ -10,6 +9,5 @@
 @import "pages/home";
 
 
-@import "layout/header";
 @import "layout/footer";
 @import "layout/navigation";
