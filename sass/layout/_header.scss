@@ -73,6 +73,8 @@
       justify-content: flex-end;
       align-items: flex-end;
       height: 100%;
+      transform-origin: top;
+      transition: all 0.3s;
 
       @media (max-width: 1200px) {
         width: 48%;
@@ -80,13 +82,22 @@
 
 
       @media (max-width: 760px) {
-        width: 9%;
+        width: 100%;
         justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 2rem;
+        height: 15rem;
       }
 
-      @media (max-width: 500px) {
-        width: 13%;
+
+      @media (max-width: 450px) {
+        height: 20rem;
       }
+
+
+
+
+
 
 
 
@@ -96,18 +107,15 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-              z-index: 10;
+        z-index: 10;
         transform-origin: top;
         transition: all 0.7s;
         @media (max-width: 760px) {
-          padding-top: 9rem;
-          position: absolute;
-          top: 0;
-          left: 0;
+          padding-top: 0;
+          position: relative;
           width: 100%;
           height: auto;
           flex-flow: column;
-          background-color: rgba(46, 48, 143, 1);
         }
 
         li{
@@ -126,20 +134,14 @@
           @media (max-width: 760px) {
 
             width: 100% !important;
-            height: 8.5rem;
+            height: 5.5rem;
             color: white;
-            border-bottom: 1px solid rgba(#fff,0.3);
+            text-align: left;
+            border-bottom: 1px dashed rgba(#fff,0.3);
             font-size: 2rem;
             font-weight: 500;
 
-            &:first-of-type{
-              border-top: 1px solid rgba(#fff,0.3);
 
-            }
-            &:hover{
-              background-color: #2e308f;
-              color: white;
-            }
           }
 
           a{
@@ -166,7 +168,7 @@
               display: block;
               content: '';
               max-width: 10rem;
-              width: 70%;
+              width: 3.5rem;
               height: 1px;
               background-color: #fff;
               position: absolute;
@@ -187,7 +189,6 @@
               }
 
               @media (max-width: 760px) {
-                color: #ffd100;
 
               }
 
@@ -198,6 +199,7 @@
 
 
     }
+
 
     &__btns{
       width: 25.83%;
@@ -385,6 +387,7 @@
 
 
 
+
       @media (max-width: 800px) {
         width: 90%;
       }
@@ -434,6 +437,21 @@
     transform: scaleY(0);
     height: 0;
     opacity: 0;
+    overflow: hidden;
+    padding-top: 0;
+    //position: absolute;
   }
 
+}
+
+
+.navHide{
+  @media (max-width: 760px) {
+    //position: absolute;
+    transform: scaleY(0);
+    height: 0;
+    overflow: hidden;
+    //position: absolute;
+    z-index: -11;
+  }
 }
