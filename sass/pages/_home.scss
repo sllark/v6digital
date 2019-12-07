@@ -12,9 +12,17 @@ main{
   align-items: center;
   padding-bottom: 4rem;
 
+  h1{
+
+    @media (min-width: 450px) {
+      br{
+        display: none;
+      }
+    }
+  }
 
 
-  &__allBoxes{
+    &__allBoxes{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,17 +58,27 @@ main{
         padding: 2rem 2rem 5rem;
       }
 
+      & > picture > img{
+        width: 5rem;
+        height: 5rem;
+      }
+
       h3{
         font-weight: 700;
         color: #824cbf;
         font-size: 1.5rem;
-        margin: 1.4rem 0 1rem;
+        position: absolute;
+        top: 8rem;
+        left: 2rem;
       }
       p{
         font-size: 1.4rem;
         font-weight: 400;
         margin-bottom: 1rem;
         line-height: 1.4;
+        position: absolute;
+        top: 8em;
+        left: 2rem;
       }
       a{
         margin-top: 1.5rem;
@@ -274,6 +292,7 @@ main{
 
 .sectionConversion{
   padding: 4rem 0;
+
   .sectionServices__allBoxes__box{
     max-height: 27.5rem;
     min-height: 27.5rem;
@@ -282,9 +301,37 @@ main{
     justify-content: center;
     align-items: center;
 
+
+
     &>picture>img{
       width: 7rem;
+      height: 7rem;
+      position: absolute;
+      top: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
     }
+
+    h3{
+      font-weight: 700;
+      color: #824cbf;
+      font-size: 1.5rem;
+      position: absolute;
+      top:11rem;
+      left: 2rem;
+    }
+    p{
+      width: 90%;
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+      line-height: 1.4;
+      position: absolute;
+      top: 10em;
+      left: 2rem;
+    }
+
+
 
     a{
       position: absolute;
@@ -432,6 +479,14 @@ main{
     @media (max-width: 750px) {
       align-items: center;
     }
+  }
+
+  .sectionSEO__left__services__serv{
+    margin: 2rem 0;
+  }
+
+  .sectionSEO__left__services__serv img{
+    transform: translateY(0);
   }
   .sectionSEO__right{
     width: 53%;
@@ -685,6 +740,17 @@ main{
   align-items: center;
   flex-flow: column;
   max-width: 105.6rem;
+
+
+
+  h1{
+
+    @media (min-width: 450px) {
+      br{
+        display: none;
+      }
+    }
+  }
 
   &>h1,.heading{
     margin-top: 1rem;
