@@ -10,7 +10,10 @@
   <link rel="stylesheet" href="css/header.css">
   
   <!--<link rel="stylesheet" href="css/main.css">-->
-
+  
+  <script>
+      document.addEventListener("touchstart", function() {},false);
+   </script>
 
 
 </head>
@@ -873,18 +876,22 @@
 
 
 
-<div class="scrollTopButton" onclick="">
-  <img src="img/scrolltop-arrow.png" alt="scroll Top arrow " onclick="">
+<div class="scrollTopButton" onclick="void(0)">
+  <img src="img/scrolltop-arrow.png" alt="scroll Top arrow" onclick="">
 </div>
 
 
 
 <link rel="stylesheet" href="css/main.css">
 
+<script src="js/script.js"></script>
 
 <script>
     document.addEventListener("touchstart", function() {},false);
+    document.addEventListener('touchstart', () => {});
+    document.addEventListener('touchend', () => {});
+    document.addEventListener('touchcancel', () => {});
+    document.addEventListener('touchmove', () => {});
 </script>
-<script src="js/script.js"></script>
 </body>
 </html>
